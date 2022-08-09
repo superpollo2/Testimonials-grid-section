@@ -2,5 +2,81 @@
     padding: 0;
     box-sizing: 0;
     margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+:root {
+    /*colores*/
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+.container{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+    background-color: var(--Light-grayish-blue);
+    grid-template-areas: 
+        "dan"
+        "jona" 
+        "jane" 
+        "pat"  
+        "kira";
+    grid-gap: 0.5rem;
+}
+.container-info--dan{
+    background-color: var(--Moderate-violet);
+    grid-area: dan;
+    color: var(--White);
+    padding: 1rem;
+    margin: 4rem 1rem 0.1rem 1rem;
+}
+.container-info--jona{
+    background-color: var(--Very-dark-grayish-blue);
+    grid-area: jona;
+    color: var(--White);
+    margin: 1rem 1rem 0.1rem 1rem;
+    padding: 1rem;
+}
+
+.container-info--jane{
+    background-color: white;
+    grid-area: jane;
+    margin: 1rem 1rem 0.1rem 1rem;
+    padding: 1rem;
+    
+}
+
+.container-info--pat{
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: pat;
+    color: var(--White);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.container-info--kira{
+    background-color: var(--White);
+    grid-area: kira;
+    margin: 1rem 1rem 0.1rem 1rem;
+    padding: 1rem;
+}
+
+@media only screen and (max-widht:550px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: aquamarine;
+        grid-template-areas: 
+            "dan jona kira"
+            "jane pat kira" 
+        ;
+    }
+    }
+
 
