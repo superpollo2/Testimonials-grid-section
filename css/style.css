@@ -22,7 +22,7 @@
     display: grid;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr ;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 0.8fr 1fr ;
     background-color: var(--Light-grayish-blue);
     grid-template-areas: 
         "dan"
@@ -34,6 +34,7 @@
     
 }
 .container-info--dan{
+    position: relative;
     background-color: var(--Moderate-violet);
     grid-area: dan;
     color: var(--White);
@@ -44,6 +45,7 @@
     
 }
 .container-info--jona{
+    position: relative;
     background-color: var(--Very-dark-grayish-blue);
     grid-area: jona;
     height: fit-content;
@@ -55,6 +57,7 @@
 }
 
 .container-info--jane{
+    position: relative;
     background-color: white;
     grid-area: jane;
     margin: 0rem 1rem 0.1rem 1rem;
@@ -66,6 +69,7 @@
 
 
 .container-info--pat{
+    position: relative;
     background-color: var(--Very-dark-blackish-blue);
     grid-area: pat;
     color: var(--White);
@@ -77,6 +81,7 @@
 
 
 .container-info--kira{
+    position: relative;
     background-color: var(--White);
     grid-area: kira;
     margin: 0rem 1rem 4rem 1rem;
@@ -91,25 +96,48 @@ img{
     
 }
 
-.header-info--dan{
+.div-header--dan{
     position: absolute;
-    left: 6rem;
-    top: 5.5rem;
+    left: 5rem;
+    top: 1.5rem;
+}
+
+
+.div-header--jona{
+    position: absolute;
+    left: 5rem;
+    top: 1.5rem;
+}
+
+.div-header--jane{
+    position: absolute;
+    left: 5rem;
+    top: 1.5rem;
+}
+.div-header--pat{
+    position: absolute;
+    left: 5rem;
+    top: 1.5rem;
+}
+.div-header--kira{
+    position: absolute;
+    left: 5rem;
+    top: 1.5rem;
 }
 
 
 .header-text--graduate{
     opacity: 50%;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 blockquote{
-    padding-top: 0.9rem;
+    padding: 0.9rem;
     text-align: left;
     opacity: 50%;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 h2{
@@ -138,34 +166,50 @@ h2{
             "dan dan jona kira"
             "jane pat pat kira" 
         ;
-        grid-gap: 0.1rem;
+        grid-gap: 0.2rem;
         justify-content: center;
         align-content: center;
         
     }
     .container-info--dan{
-        margin: 0.5rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 1rem 1rem;
     }
     .container-info--jona{
-        margin: 0.5rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 1rem 1rem;
     }
     
     .container-info--jane{
-        margin: 0.5rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 1rem 1rem;
         
     }
     
     
     .container-info--pat{
 
-        margin: 0.5rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 1rem 1rem;
 
     }
     
     
     .container-info--kira{
-        margin: 0.5rem 1rem 1rem 1rem;
+        margin: 0rem 1rem 1rem 1rem;
     }
 }
 
-
+@media (max-width:320px) {
+    .container{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.5fr 0.5fr 0.8fr 1fr ;
+        background-color: var(--Light-grayish-blue);
+        grid-template-areas: 
+            "dan"
+            "jona" 
+            "jane" 
+            "pat"  
+            "kira";
+        grid-gap: 2rem;
+        
+    }
+}
