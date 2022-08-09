@@ -15,6 +15,8 @@
     --Light-grayish-blue: hsl(210, 46%, 95%);
 
 }
+
+
 .container{
     display: grid;
     height: 100%;
@@ -28,15 +30,17 @@
         "pat"  
         "kira";
     grid-gap: 0.5rem;
+    
 }
 .container-info--dan{
     background-color: var(--Moderate-violet);
     grid-area: dan;
     color: var(--White);
     padding: 1rem;
-    
     margin: 4rem 1rem 0.1rem 1rem;
     border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    
 }
 .container-info--jona{
     background-color: var(--Very-dark-grayish-blue);
@@ -45,6 +49,7 @@
     margin: 1rem 1rem 0.1rem 1rem;
     padding: 1rem;  
     border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .container-info--jane{
@@ -53,6 +58,7 @@
     margin: 1rem 1rem 0.1rem 1rem;
     padding: 1rem;
     border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     
 }
 
@@ -64,6 +70,7 @@
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 
@@ -73,6 +80,7 @@
     margin: 0.5rem 1rem 4rem 1rem;
     padding: 1rem;
     border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 img{
@@ -104,16 +112,46 @@ h2{
     font-size: 1.3rem;
     letter-spacing: 1.5px;
 }
-@media only screen and (min-widht:550px) {
+
+
+
+@media (min-width:1025px){
     .container{
-        grid-template-columns: 1fr 1fr 1fr;
+        height: fit-content;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
         grid-template-rows: 1fr 1fr;
-        background-color: aquamarine;
+        background-color: var(--Light-grayish-blue);
         grid-template-areas: 
-            "dan jona kira"
-            "jane pat kira" 
+            "dan dan jona kira"
+            "jane pat pat kira" 
         ;
+        justify-content: center;
+        align-content: center;
+        
     }
+    .container-info--dan{
+        margin: 1rem 1rem 1rem 1rem;
     }
+    .container-info--jona{
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    
+    .container-info--jane{
+        margin: 1rem 1rem 1rem 1rem;
+        
+    }
+    
+    
+    .container-info--pat{
+
+        margin: 1rem 1rem 1rem 1rem;
+
+    }
+    
+    
+    .container-info--kira{
+        margin: 1rem 1rem 1rem 1rem;
+    }
+}
 
 
