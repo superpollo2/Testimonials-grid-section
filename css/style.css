@@ -148,7 +148,7 @@ h2{
 
 
 
-@media (min-width:1025px)  {
+@media (min-width:1300px)  {
     main{
         display: flex;
         height: 100vh;
@@ -167,7 +167,7 @@ h2{
             "dan dan jona kira"
             "jane pat pat kira" 
         ;
-        grid-gap: 0.2rem;
+        grid-gap: 0.1rem;
         justify-content: center;
         align-content: center;
         
